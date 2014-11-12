@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+  <head>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <style>
+      @import url(http://fonts.googleapis.com/css?family=Poiret+One|Josefin+Sans:300,400,600,700);
+      bg {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        background: url(bg-compressed.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+        -webkit-animation: hue 3s infinite;
+        -moz-animation: hue 3s infinite;
+        -o-animation: hue 3s infinite;
+        animation: hue 3s infinite;
+      }
+
+      @-webkit-keyframes hue {
+          from {-webkit-filter: hue-rotate(0deg);}
+          to {-webkit-filter: hue-rotate(360deg);}
+      }
+      @-moz-keyframes hue {
+          from {-webkit-filter: hue-rotate(0deg);}
+          to {-webkit-filter: hue-rotate(360deg);}
+      }
+      @-o-keyframes hue {
+          from {-webkit-filter: hue-rotate(0deg);}
+          to {-webkit-filter: hue-rotate(360deg);}
+      }
+      @keyframes hue {
+          from {-webkit-filter: hue-rotate(0deg);}
+          to {-webkit-filter: hue-rotate(360deg);}
+      }
+
+      headline {
+        display: block;
+        position: absolute;
+        top: 6%;
+        left: 8%;
+        font-family: 'Poiret One', sans-serif;
+        font-size: 36pt;
+        color: #333;
+
+      }
+
+    </style>
+  </head>
+  <body>
+    <bg>
+      <headline>gorinsky.net</headline>
+    </bg>
+  </body>
+</html>
