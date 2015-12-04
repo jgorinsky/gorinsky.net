@@ -30,16 +30,22 @@
           to {-webkit-filter: hue-rotate(360deg);}
       }
       @-moz-keyframes hue {
-          from {-webkit-filter: hue-rotate(0deg);}
-          to {-webkit-filter: hue-rotate(360deg);}
+          from {-moz-filter: hue-rotate(0deg);}
+          to {-moz-filter: hue-rotate(360deg);}
       }
       @-o-keyframes hue {
-          from {-webkit-filter: hue-rotate(0deg);}
-          to {-webkit-filter: hue-rotate(360deg);}
+          from {-o-filter: hue-rotate(0deg);}
+          to {-o-filter: hue-rotate(360deg);}
       }
       @keyframes hue {
-          from {-webkit-filter: hue-rotate(0deg);}
-          to {-webkit-filter: hue-rotate(360deg);}
+          from {
+            filter: hue-rotate(0deg);
+            -webkit-filter: hue-rotate(0deg);
+          }
+          to {
+            filter: hue-rotate(360deg);
+            -webkit-filter: hue-rotate(360deg);
+          }
       }
 
       headline {
